@@ -1,7 +1,8 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: 'production',
+  mode: "production",
   entry: {
     index: "./lib/index.tsx",
   },
@@ -16,8 +17,13 @@ module.exports = {
         test: /\.tsx?$/,
         loader: "ts-loader",
         include: [],
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "index.html",
+    }),
+  ],
 };
