@@ -22,6 +22,7 @@
     "noUnusedLocals": true
   },
   "include": [
+    "./lib/**/*.tsx"
   ],
   "exclude": [
     "node_modules",
