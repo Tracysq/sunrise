@@ -21,9 +21,7 @@
     "allowSyntheticDefaultImports": true,
     "noUnusedLocals": true
   },
-  "include": [
-    "./lib/**/*.tsx"
-  ],
+  "include": [],
   "exclude": [
     "node_modules",
     "build",
